@@ -30,9 +30,86 @@ function multiply () {
 }
 */
 
+
+
+/* Arrays */
+
+/*
+let details = [
+    "Front-End Developer",
+    "Wordpress Developer",
+    "Jr. Shopify",
+    "HTML5 / CSS3 / Boostrap",
+    "Github",
+    "Photoshop"
+]
+
+console.log(details[0]);
+console.log(details[2]);
+console.log(details[5]);
+
+
+let mySelf = ["Abdullah Bin Arshad", 20, true]
+console.log(mySelf[0]);
+console.log(mySelf[1]);
+console.log(mySelf[2]);
+
+
+
+let messages = ["Hello, you good", "Yeah I am good", "And what about you"]
+let newMessage = "Same here!"
+messages.push(newMessage)
+console.log(messages);
+messages.pop()
+console.log(messages);
+var removed = messages.splice(-1);
+console.log(messages);
+*/
+
+/* Counts
+for ( let count = 10; count < 21; count += 1 ) {
+    console.log(count);
+}
+
+*/
+
+
+/* Counts 
+for ( let i = 10; i < 101; i += 10 ) {
+    console.log(i);
+ }  
+ */
+
+/* loop length method 
+let messaging = ["Hello", "Hi", "What's up?", "Dead hotness here!", "Ahhhhahha"]
+for (let count = 0 ; count < messaging.length; count += 1 ) {
+   console.log(messaging[count]);
+}
+*/
+
+/*
+let crd = [1, 2, 3]
+for (let crdDisplay = 0; crdDisplay < crd.length; crdDisplay ++ ) {
+    console.log(crd[crdDisplay]);
+}
+*/
+
+/*
+
+let message = ["Hi", "Bye", "Ahhhahah"]
+
+let messageEl = document.getElementById("message-el")
+
+for ( let messaging = 0; messaging < message.length; messaging ++ ){
+    messageEl.textContent += message[messaging] + " "
+}
+
+*/
+
+/*
 let firstCard = 10
 let secondCard = 1
-let card = 10
+let cards = [firstCard, secondCard]
 let sum = firstCard + secondCard
 let hasBlackjack = false
 let isAlive = true
@@ -43,6 +120,17 @@ let messageEl = document.getElementById("message")
 let cardEl = document.getElementById("cards")
 
 function startGame() {
+    renderGame()
+}
+
+function renderGame() {
+
+    sumEl.textContent = "Sum: " + sum
+    cardEl.textContent = "Cards: "
+    for (let getCards = 0; getCards < cards.length; getCards ++) {
+        cardEl.textContent += cards[getCards] + " "
+    }
+
     if (sum <= 20) {
         message = "Do you want to draw a new card?"
     } else if (sum === 21) {
@@ -53,12 +141,22 @@ function startGame() {
         isAlive = false
     }
     messageEl.innerText = message
-    sumEl.textContent = "Sum: " + sum
-    cardEl.textContent = "Cards: " + firstCard + " " + secondCard
 }
 
 function newCard() {
+    let card = 10
     sum += card
-    startGame()
+    cards.push(card)
+    renderGame()
+}
+*/
+
+let player1Time = 102
+let player2Time = 107
+
+function totlaRaceTime () {
+    return player1Time + player2Time
 }
 
+let time = totlaRaceTime
+console.log(time);
