@@ -106,9 +106,23 @@ for ( let messaging = 0; messaging < message.length; messaging ++ ){
 
 */
 
+/* Returns */
 /*
-let firstCard = 10
-let secondCard = 1
+let player1Time = 102
+let player2Time = 107
+
+function raceTime() {
+    return player1Time + player2Time
+}
+
+let totalTime = raceTime()
+console.log(totalTime);
+*/
+
+/*
+
+let firstCard = getRandomCard()
+let secondCard = getRandomCard()
 let cards = [firstCard, secondCard]
 let sum = firstCard + secondCard
 let hasBlackjack = false
@@ -118,6 +132,10 @@ message = "We're logging out"
 let sumEl = document.getElementById("sum")
 let messageEl = document.getElementById("message")
 let cardEl = document.getElementById("cards")
+
+function getRandomCard() {
+    return 5
+}
 
 function startGame() {
     renderGame()
@@ -144,19 +162,22 @@ function renderGame() {
 }
 
 function newCard() {
-    let card = 10
+    let card = getRandomCard()
     sum += card
     cards.push(card)
     renderGame()
 }
+
 */
 
-let player1Time = 102
-let player2Time = 107
+/*
+let randomNumber = Math.floor( Math.random() * 6 ) + 1
+console.log(randomNumber)
+*/
 
-function totlaRaceTime () {
-    return player1Time + player2Time
+function rollDice() {
+    return Math.floor( Math.random() * 6 ) + 1
 }
 
-let time = totlaRaceTime
-console.log(time);
+let randomNumbers = rollDice()
+console.log(randomNumbers);
