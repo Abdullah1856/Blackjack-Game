@@ -121,6 +121,32 @@ console.log(totalTime);
 
 /*
 
+
+/*
+let randomNumber = Math.floor( Math.random() * 6 ) + 1
+console.log(randomNumber)
+*/
+
+/*
+
+function rollDice() {
+    return Math.floor( Math.random() * 6 ) + 1
+}
+
+let randomNumbers = rollDice()
+console.log(randomNumbers);
+
+*/
+
+/*
+function rollDice() {
+    return Math.floor( Math.random() * 6 ) + 1
+}
+
+let dice = rollDice()
+console.log(dice);
+*/
+
 let firstCard = getRandomCard()
 let secondCard = getRandomCard()
 let cards = [firstCard, secondCard]
@@ -133,9 +159,20 @@ let sumEl = document.getElementById("sum")
 let messageEl = document.getElementById("message")
 let cardEl = document.getElementById("cards")
 
+
+
 function getRandomCard() {
-    return 5
+    let randomNumber = Math.floor(Math.random() * 13) + 1
+    if (randomNumber > 10) {
+        return 10
+    } else if (randomNumber == 1) {
+        return 11
+    } else {
+         return randomNumber
+    }
 }
+
+
 
 function startGame() {
     renderGame()
@@ -145,7 +182,7 @@ function renderGame() {
 
     sumEl.textContent = "Sum: " + sum
     cardEl.textContent = "Cards: "
-    for (let getCards = 0; getCards < cards.length; getCards ++) {
+    for (let getCards = 0; getCards < cards.length; getCards++) {
         cardEl.textContent += cards[getCards] + " "
     }
 
@@ -168,16 +205,3 @@ function newCard() {
     renderGame()
 }
 
-*/
-
-/*
-let randomNumber = Math.floor( Math.random() * 6 ) + 1
-console.log(randomNumber)
-*/
-
-function rollDice() {
-    return Math.floor( Math.random() * 6 ) + 1
-}
-
-let randomNumbers = rollDice()
-console.log(randomNumbers);
