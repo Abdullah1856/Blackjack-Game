@@ -180,6 +180,10 @@ let player = {
     points: '145'
 }
 
+let points = document.getElementById("point")
+points.innertext = "$:" + " player.name" + "player.points"
+
+
 let firstCard = getRandomCard()
 let secondCard = getRandomCard()
 let cards = [firstCard, secondCard]
