@@ -174,6 +174,12 @@ if (likeMovies === true || likeStartups === true) {
 }
 */
 
+/* Objectives */
+let player = {
+    name: 'Abdullah',
+    points: '145'
+}
+
 let firstCard = getRandomCard()
 let secondCard = getRandomCard()
 let cards = [firstCard, secondCard]
