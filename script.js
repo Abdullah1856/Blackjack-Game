@@ -147,6 +147,20 @@ let dice = rollDice()
 console.log(dice);
 */
 
+/* Logoical And Operators */
+/*
+let getTheCertificate = true
+let theCourseIsCompleted = true
+
+function giveCertificate() {
+    console.log("You have the certificate now");
+}
+
+if (getTheCertificate === true && theCourseIsCompleted === true) {
+    giveCertificate()
+}
+*/
+
 let firstCard = getRandomCard()
 let secondCard = getRandomCard()
 let cards = [firstCard, secondCard]
