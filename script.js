@@ -161,6 +161,19 @@ if (getTheCertificate === true && theCourseIsCompleted === true) {
 }
 */
 
+/* Logical true operator */
+/*
+let likeMovies = true
+let likeStartups = false
+function recomendMovies() {
+    console.log("I hope you like this movie");
+}
+
+if (likeMovies === true || likeStartups === true) {
+    recomendMovies()
+}
+*/
+
 let firstCard = getRandomCard()
 let secondCard = getRandomCard()
 let cards = [firstCard, secondCard]
