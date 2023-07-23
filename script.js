@@ -181,7 +181,7 @@ let player = {
 }
 
 let points = document.getElementById("point")
-points.innertext = "$:" + " player.name" + "player.points"
+points.innerText = "player.name" ": " + "$" + "player.points"
 
 
 let firstCard = getRandomCard()
