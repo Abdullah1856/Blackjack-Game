@@ -174,6 +174,19 @@ if (likeMovies === true || likeStartups === true) {
 }
 */
 
+/* Objectives With String, Boolean and Number */
+/*
+let castleListing = {
+    castleName: "The Abdullah Castle",
+    pricePerNight: 190,
+    availableNight: false,
+    category: ["Home", "Night Out", "Peace"]
+}
+
+console.log(castleListing.pricePerNight + castleListing.castleName);
+*/
+
+
 let firstCard = getRandomCard()
 let secondCard = getRandomCard()
 let cards = []
